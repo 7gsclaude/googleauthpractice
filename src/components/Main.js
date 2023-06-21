@@ -1,18 +1,23 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Login from '../pages/Login'
+import Index from '../pages/Index'
+import GoogleAuth from './GoogleAuth'
 
 
-const Home = () => {
+const Main = () => {
   return (
     <div>
-      <h1>home</h1>
+     
+        <GoogleAuth />
 
-      <Routes>
-        <Route path='/login' element={Login}></Route>
-      </Routes>
+        <Routes>
+          <Route path="/" element={Index}></Route>
+          <Route path="/login" element={Login}></Route>
+        </Routes>
+    
     </div>
   );
 }
 
-export default Home
+export default Main
