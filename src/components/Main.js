@@ -2,14 +2,14 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Login from '../pages/Login'
 import Index from '../pages/Index'
-import GoogleAuth from './GoogleAuth'
+import GoogleLoginButton from './GoogleLoginButton'
 
 
 const Main = () => {
   return (
     <div>
      
-        <GoogleAuth />
+        <GoogleLoginButton />
 
         <Routes>
           <Route path="/" element={Index}></Route>
